@@ -1,4 +1,4 @@
-package com.microservicios.cursos;
+package com.microservicios.examenes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,13 +7,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@EntityScan({"com.microservicios.commons.alumnos.model.entity",
-	"com.commons.examenes.models.entity",
-	"com.microservicios.cursos.models.entity"})
-public class MicroserviciosCursosApplication {
+@EntityScan({"com.commons.examenes.models.entity"})
+public class MicroserviciosExamenesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviciosCursosApplication.class, args);
+		SpringApplication.run(MicroserviciosExamenesApplication.class, args);
 	}
 
 }
